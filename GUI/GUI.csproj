@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACD7F639-9A42-4687-9244-F4967377640D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AgendaContactos.GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Autenticacion\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autenticacion\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categorias\ListadoCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categorias\ListadoCategorias.Designer.cs">
+      <DependentUpon>ListadoCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categorias\RegistrarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categorias\RegistrarCategoria.Designer.cs">
+      <DependentUpon>RegistrarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contactos\GestionContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contactos\GestionContactos.Designer.cs">
+      <DependentUpon>GestionContactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contactos\RegistrarContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contactos\RegistrarContacto.Designer.cs">
+      <DependentUpon>RegistrarContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Autenticacion\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categorias\ListadoCategorias.resx">
+      <DependentUpon>ListadoCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categorias\RegistrarCategoria.resx">
+      <DependentUpon>RegistrarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contactos\GestionContactos.resx">
+      <DependentUpon>GestionContactos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contactos\RegistrarContacto.resx">
+      <DependentUpon>RegistrarContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{5b2f8d5e-f8e2-4c24-9350-4afa331d242b}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{6188cd8b-38e0-4666-9711-d7bd114d1eab}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EL\EL.csproj">
+      <Project>{d1095c46-c6d6-4c0f-a597-590d8fab1f9b}</Project>
+      <Name>EL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Recursos\2889332.png" />
+    <Content Include="Recursos\7063217.png" />
+    <Content Include="Recursos\9781056-icone-de-design-moderno-de-seguranca-de-perfil-da-web-vetor.jpg" />
+    <Content Include="Recursos\calendario-_1_.ico" />
+    <Content Include="Recursos\visually-appealing-icon-of-contact-book-ready-to-use-and-download-vector.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
