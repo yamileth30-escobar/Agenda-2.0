@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="AgendaContactos/AgendaContactos.csproj" Id="a371da6c-30a6-494e-b6d1-b603762cf379" />
+  <Project Path="BLL/BLL.csproj" Id="5b2f8d5e-f8e2-4c24-9350-4afa331d242b" />
+  <Project Path="DAL/DAL.csproj" Id="6188cd8b-38e0-4666-9711-d7bd114d1eab" />
+  <Project Path="EL/EL.csproj" Id="d1095c46-c6d6-4c0f-a597-590d8fab1f9b" />
+  <Project Path="GUI/GUI.csproj" Id="acd7f639-9a42-4687-9244-f4967377640d" />
+</Solution>
