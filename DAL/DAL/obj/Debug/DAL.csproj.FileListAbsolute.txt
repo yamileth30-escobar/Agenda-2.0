@@ -1,0 +1,15 @@
+C:\Users\USER\source\repos\AgendaContactos\DAL\bin\Debug\DAL.dll.config
+C:\Users\USER\source\repos\AgendaContactos\DAL\bin\Debug\DAL.dll
+C:\Users\USER\source\repos\AgendaContactos\DAL\bin\Debug\DAL.pdb
+C:\Users\USER\source\repos\AgendaContactos\DAL\bin\Debug\EL.dll
+C:\Users\USER\source\repos\AgendaContactos\DAL\bin\Debug\EntityFramework.dll
+C:\Users\USER\source\repos\AgendaContactos\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\source\repos\AgendaContactos\DAL\bin\Debug\EL.pdb
+C:\Users\USER\source\repos\AgendaContactos\DAL\bin\Debug\EL.dll.config
+C:\Users\USER\source\repos\AgendaContactos\DAL\bin\Debug\EntityFramework.xml
+C:\Users\USER\source\repos\AgendaContactos\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\source\repos\AgendaContactos\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\AgendaContactos\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\AgendaContactos\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\USER\source\repos\AgendaContactos\DAL\obj\Debug\DAL.dll
+C:\Users\USER\source\repos\AgendaContactos\DAL\obj\Debug\DAL.pdb
