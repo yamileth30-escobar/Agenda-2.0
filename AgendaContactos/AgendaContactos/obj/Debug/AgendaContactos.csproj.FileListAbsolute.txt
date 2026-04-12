@@ -1,0 +1,7 @@
+C:\Users\USER\source\repos\AgendaContactos\AgendaContactos\bin\Debug\AgendaContactos.exe.config
+C:\Users\USER\source\repos\AgendaContactos\AgendaContactos\bin\Debug\AgendaContactos.exe
+C:\Users\USER\source\repos\AgendaContactos\AgendaContactos\bin\Debug\AgendaContactos.pdb
+C:\Users\USER\source\repos\AgendaContactos\AgendaContactos\obj\Debug\AgendaContactos.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\AgendaContactos\AgendaContactos\obj\Debug\AgendaContactos.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\AgendaContactos\AgendaContactos\obj\Debug\AgendaContactos.exe
+C:\Users\USER\source\repos\AgendaContactos\AgendaContactos\obj\Debug\AgendaContactos.pdb
