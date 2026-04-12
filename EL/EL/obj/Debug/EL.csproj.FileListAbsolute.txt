@@ -1,0 +1,7 @@
+C:\Users\USER\source\repos\AgendaContactos\EL\bin\Debug\EL.dll.config
+C:\Users\USER\source\repos\AgendaContactos\EL\bin\Debug\EL.dll
+C:\Users\USER\source\repos\AgendaContactos\EL\bin\Debug\EL.pdb
+C:\Users\USER\source\repos\AgendaContactos\EL\obj\Debug\EL.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\AgendaContactos\EL\obj\Debug\EL.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\AgendaContactos\EL\obj\Debug\EL.dll
+C:\Users\USER\source\repos\AgendaContactos\EL\obj\Debug\EL.pdb
