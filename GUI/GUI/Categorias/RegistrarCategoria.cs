@@ -15,7 +15,7 @@ namespace AgendaContactos.GUI.Categorias
         }
 
         // --- MÉTODO PARA GUARDAR ---
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click_1(object sender, EventArgs e)
         {
             // Validamos que el cuadro de texto no esté vacío
             if (string.IsNullOrWhiteSpace(txtNombreCategoria.Text))

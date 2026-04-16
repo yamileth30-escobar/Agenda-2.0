@@ -142,11 +142,12 @@
     <Content Include="Recursos\2889332.png" />
     <Content Include="Recursos\7063217.png" />
     <Content Include="Recursos\9781056-icone-de-design-moderno-de-seguranca-de-perfil-da-web-vetor.jpg" />
+    <Content Include="Recursos\analitica.png" />
     <Content Include="Recursos\calendario-_1_.ico" />
-    <Content Include="Recursos\Categorias.png" />
-    <Content Include="Recursos\Contactos.png" />
-    <Content Include="Recursos\Reportes.png" />
-    <Content Include="Recursos\Ubicacion.png" />
+    <Content Include="Recursos\libro-de-contactos.png" />
+    <Content Include="Recursos\mapa.png" />
+    <Content Include="Recursos\memorandum.png" />
+    <Content Include="Recursos\usuario.png" />
     <Content Include="Recursos\visually-appealing-icon-of-contact-book-ready-to-use-and-download-vector.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

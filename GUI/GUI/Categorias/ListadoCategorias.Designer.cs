@@ -40,10 +40,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.labelNombreCat = new System.Windows.Forms.Label();
+            this.txtNombreCat = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.dgvCategorias = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -66,6 +70,23 @@
             this.label1.Size = new System.Drawing.Size(242, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Registrar Nuevo Contacto";
+            // 
+            // labelNombreCat
+            // 
+            this.labelNombreCat.AutoSize = true;
+            this.labelNombreCat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombreCat.Location = new System.Drawing.Point(26, 56);
+            this.labelNombreCat.Name = "labelNombreCat";
+            this.labelNombreCat.Size = new System.Drawing.Size(112, 16);
+            this.labelNombreCat.TabIndex = 20;
+            this.labelNombreCat.Text = "Nombre categoría:";
+            // 
+            // txtNombreCat
+            // 
+            this.txtNombreCat.Location = new System.Drawing.Point(140, 54);
+            this.txtNombreCat.Name = "txtNombreCat";
+            this.txtNombreCat.Size = new System.Drawing.Size(200, 20);
+            this.txtNombreCat.TabIndex = 21;
             // 
             // label5
             // 
@@ -156,6 +177,7 @@
             this.btnGuardar.TabIndex = 31;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
@@ -168,6 +190,7 @@
             this.btnCancelar.TabIndex = 32;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // cmbCategoria
             // 
@@ -182,11 +205,21 @@
             this.cmbCategoria.Size = new System.Drawing.Size(200, 21);
             this.cmbCategoria.TabIndex = 30;
             // 
+            // dgvCategorias
+            // 
+            this.dgvCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCategorias.Location = new System.Drawing.Point(26, 320);
+            this.dgvCategorias.Name = "dgvCategorias";
+            this.dgvCategorias.Size = new System.Drawing.Size(314, 67);
+            this.dgvCategorias.TabIndex = 33;
+            // 
             // ListadoCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 411);
+            this.Controls.Add(this.labelNombreCat);
+            this.Controls.Add(this.txtNombreCat);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.cmbCategoria);
@@ -201,12 +234,14 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dgvCategorias);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ListadoCategorias";
             this.Text = "Smart Contacts | ListadoCategorias";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,8 +260,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelNombreCat;
+        private System.Windows.Forms.TextBox txtNombreCat;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.DataGridView dgvCategorias;
     }
 }

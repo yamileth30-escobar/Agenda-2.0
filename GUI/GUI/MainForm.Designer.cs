@@ -32,19 +32,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.btnCerrarsesión = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblBienvenida = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnCantactos = new System.Windows.Forms.Button();
             this.btnCategorias = new System.Windows.Forms.Button();
             this.btnUbicaciones = new System.Windows.Forms.Button();
+            this.btnCantactos = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
-            this.lblBienvenida = new System.Windows.Forms.Label();
             this.timerHora = new System.Windows.Forms.Timer(this.components);
             this.lblHora = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCerrarsesión
@@ -62,7 +62,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Green;
+            this.panel1.BackColor = System.Drawing.Color.SeaGreen;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lblBienvenida);
             this.panel1.Controls.Add(this.label1);
@@ -71,6 +71,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(867, 68);
             this.panel1.TabIndex = 45;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(764, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.MainForm_Load);
+            // 
+            // lblBienvenida
+            // 
+            this.lblBienvenida.AutoSize = true;
+            this.lblBienvenida.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenida.ForeColor = System.Drawing.Color.White;
+            this.lblBienvenida.Location = new System.Drawing.Point(567, 21);
+            this.lblBienvenida.Name = "lblBienvenida";
+            this.lblBienvenida.Size = new System.Drawing.Size(151, 25);
+            this.lblBienvenida.TabIndex = 1;
+            this.lblBienvenida.Text = "\"Bienvenid@...\"\r\n";
+            this.lblBienvenida.Click += new System.EventHandler(this.MainForm_Load);
             // 
             // label1
             // 
@@ -100,21 +124,11 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(500, 500);
             this.tableLayoutPanel1.TabIndex = 46;
             // 
-            // btnCantactos
-            // 
-            this.btnCantactos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnCantactos.Image = ((System.Drawing.Image)(resources.GetObject("btnCantactos.Image")));
-            this.btnCantactos.Location = new System.Drawing.Point(3, 3);
-            this.btnCantactos.Name = "btnCantactos";
-            this.btnCantactos.Size = new System.Drawing.Size(244, 244);
-            this.btnCantactos.TabIndex = 0;
-            this.btnCantactos.UseVisualStyleBackColor = true;
-            this.btnCantactos.Click += new System.EventHandler(this.btnContactos_Click);
-            // 
             // btnCategorias
             // 
+            this.btnCategorias.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCategorias.BackgroundImage")));
+            this.btnCategorias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCategorias.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnCategorias.Image = ((System.Drawing.Image)(resources.GetObject("btnCategorias.Image")));
             this.btnCategorias.Location = new System.Drawing.Point(253, 3);
             this.btnCategorias.Name = "btnCategorias";
             this.btnCategorias.Size = new System.Drawing.Size(244, 244);
@@ -124,8 +138,9 @@
             // 
             // btnUbicaciones
             // 
+            this.btnUbicaciones.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUbicaciones.BackgroundImage")));
+            this.btnUbicaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnUbicaciones.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnUbicaciones.Image = ((System.Drawing.Image)(resources.GetObject("btnUbicaciones.Image")));
             this.btnUbicaciones.Location = new System.Drawing.Point(3, 253);
             this.btnUbicaciones.Name = "btnUbicaciones";
             this.btnUbicaciones.Size = new System.Drawing.Size(244, 244);
@@ -133,28 +148,29 @@
             this.btnUbicaciones.UseVisualStyleBackColor = true;
             this.btnUbicaciones.Click += new System.EventHandler(this.btnUbicaciones_Click);
             // 
+            // btnCantactos
+            // 
+            this.btnCantactos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCantactos.BackgroundImage")));
+            this.btnCantactos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCantactos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnCantactos.Location = new System.Drawing.Point(3, 3);
+            this.btnCantactos.Name = "btnCantactos";
+            this.btnCantactos.Size = new System.Drawing.Size(244, 244);
+            this.btnCantactos.TabIndex = 0;
+            this.btnCantactos.UseVisualStyleBackColor = true;
+            this.btnCantactos.Click += new System.EventHandler(this.btnContactos_Click);
+            // 
             // btnReportes
             // 
+            this.btnReportes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReportes.BackgroundImage")));
+            this.btnReportes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnReportes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.Location = new System.Drawing.Point(253, 253);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(244, 244);
             this.btnReportes.TabIndex = 3;
             this.btnReportes.UseVisualStyleBackColor = true;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
-            // 
-            // lblBienvenida
-            // 
-            this.lblBienvenida.AutoSize = true;
-            this.lblBienvenida.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenida.ForeColor = System.Drawing.Color.White;
-            this.lblBienvenida.Location = new System.Drawing.Point(567, 21);
-            this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(143, 25);
-            this.lblBienvenida.TabIndex = 1;
-            this.lblBienvenida.Text = "\"Bienvenida...\"\r\n";
-            this.lblBienvenida.Click += new System.EventHandler(this.MainForm_Load);
             // 
             // timerHora
             // 
@@ -171,17 +187,6 @@
             this.lblHora.TabIndex = 47;
             this.lblHora.Text = "Hora Actual: 00: 00: 00 AM | Sábado...\"\r\n";
             this.lblHora.Click += new System.EventHandler(this.timerHora_Tick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(764, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // MainForm
             // 
@@ -200,8 +205,8 @@
             this.Text = "Smart Contacts | Menu Principal";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

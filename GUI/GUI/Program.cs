@@ -13,7 +13,7 @@ namespace AgendaContactos.GUI
             Application.SetCompatibleTextRenderingDefault(false);
 
             Login fLogin = new Login();
-
+            fLogin.ShowDialog();
             // 1. Mostramos el Login
             if (fLogin.ShowDialog() == DialogResult.OK)
             {
