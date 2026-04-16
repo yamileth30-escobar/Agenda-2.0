@@ -1,6 +1,6 @@
-﻿using System.Data;
-using AgendaContactos.DAL;
+﻿using AgendaContactos.DAL;
 using AgendaContactos.EL;
+using System.Data;
 
 namespace AgendaContactos.BLL
 {
