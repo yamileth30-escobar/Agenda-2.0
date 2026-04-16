@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DAL
+﻿namespace AgendaContactos.DAL
 {
     public class Contacto
     {
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string Telefono { get; set; }
-        public string Correo { get; set; }
-        public string Direccion { get; set; }
+        public string Categoria { get; internal set; }
+        public string Correo { get; internal set; }
+        public string Telefono { get; internal set; }
+        public string Nombre { get; internal set; }
+        public object Id { get; internal set; }
     }
 }

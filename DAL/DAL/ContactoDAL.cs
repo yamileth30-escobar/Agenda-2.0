@@ -24,12 +24,12 @@ namespace AgendaContactos.DAL
         {
             using (SqlConnection con = conexion.ObtenerConexion())
             using (SqlCommand cmd = new SqlCommand(
-                "INSERT INTO Contactos (Nombre, Telefono, Correo, Direccion) VALUES (@n, @t, @c, @d)", con))
+                "INSERT INTO Contactos (Nombre, Telefono, Correo, Categoria) VALUES (@n, @t, @c, @d)", con))
             {
                 cmd.Parameters.AddWithValue("@n", c.Nombre ?? string.Empty);
                 cmd.Parameters.AddWithValue("@t", c.Telefono ?? string.Empty);
                 cmd.Parameters.AddWithValue("@c", c.Correo ?? string.Empty);
-                cmd.Parameters.AddWithValue("@d", c.Direccion ?? string.Empty);
+                cmd.Parameters.AddWithValue("@d", c.Categoria ?? string.Empty);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -40,13 +40,13 @@ namespace AgendaContactos.DAL
         {
             using (SqlConnection con = conexion.ObtenerConexion())
             using (SqlCommand cmd = new SqlCommand(
-                "UPDATE Contactos SET Nombre=@n, Telefono=@t, Correo=@c, Direccion=@d WHERE Id=@id", con))
+                "UPDATE Contactos SET Nombre=@n, Telefono=@t, Correo=@c, Categoria=@d WHERE Id=@id", con))
             {
                 cmd.Parameters.AddWithValue("@id", c.Id);
                 cmd.Parameters.AddWithValue("@n", c.Nombre ?? string.Empty);
                 cmd.Parameters.AddWithValue("@t", c.Telefono ?? string.Empty);
                 cmd.Parameters.AddWithValue("@c", c.Correo ?? string.Empty);
-                cmd.Parameters.AddWithValue("@d", c.Direccion ?? string.Empty);
+                cmd.Parameters.AddWithValue("@d", c.Categoria ?? string.Empty);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
